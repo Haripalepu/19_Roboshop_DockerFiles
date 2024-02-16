@@ -6,6 +6,7 @@ networks:
 services:
   # docker run -d --name mongodb --network=roboshop mongodb:1.0 the below script will do same 
   mongodb:
+  #Image name should be same while building image
     image: mongodb:1.0
     container_name: mongodb
     # networks:
@@ -33,6 +34,7 @@ services:
     - payment
 
   redis:
+  #As there is nothing changes to do in rabbitmq we are directly downloading it and using.
     image: redis
     container_name: redis
 
@@ -82,3 +84,7 @@ services:
 ## docker compose
 
 
+## Docker Compose commands:
+
+## docker compose up -d 
+## dokcer compose down 

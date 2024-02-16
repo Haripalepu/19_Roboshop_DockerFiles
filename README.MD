@@ -124,3 +124,10 @@ chmod +x /usr/local/bin/docker-compose
 docker compose
 
 
+
+Docker Compose commands:
+
+docker compose up -d 
+dokcer compose down 
+
+
