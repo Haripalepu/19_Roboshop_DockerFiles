@@ -13,3 +13,5 @@ COPY *.js /docker-entrypoint-initdb.d/
 
 ## Command to check logs:
 ## docker logs <container_name>
+
+## When ever we do changes in a image we have to build it again.
