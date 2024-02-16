@@ -6,6 +6,7 @@ COPY *.js /docker-entrypoint-initdb.d/
 
 ##Command to build the image:
 ## docker build -t <image_name>:<version> .
+## While building the image we should stand at dockerfile 
 
 ## Commad to run the contianer:
 ## docker run -d --name <container_name> <image_name>:<version>

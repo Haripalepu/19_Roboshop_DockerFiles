@@ -128,6 +128,6 @@ docker compose
 Docker Compose commands:
 
 docker compose up -d 
-dokcer compose down 
+docker compose down 
 
 
