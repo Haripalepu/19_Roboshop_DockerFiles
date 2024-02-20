@@ -1,0 +1,4 @@
+Run the below command in Docker server 
+
+
+for i in mongodb catalogue user cart mysql payment shipping web ; do cd $i ; docker build -t $i:1.0 . ; cd .. ; done
