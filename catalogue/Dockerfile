@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18.19.1-alpine3.19
 EXPOSE 8080
 WORKDIR /opt/server
 ENV MONGO=true
@@ -9,3 +9,5 @@ CMD ["node", "server.js"]
 
 
 ##CMD ["node", "server.js"]- to start the nodejs service. Systemctl commands will ot work in containers.
+
+## Using alpine OS because it very light weight.
