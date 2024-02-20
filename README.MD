@@ -124,10 +124,31 @@ chmod +x /usr/local/bin/docker-compose
 docker compose
 
 
-
 Docker Compose commands:
 
 docker compose up -d 
 docker compose down 
 
+
+
+
+Docker Volume commands:
+
+Two types:
+Named volumes - Can be managed by docker commands like inpect, prune
+Unnamed volumes
+
+To create a docker volume 
+docker volume create <volume-name>
+
+docker volume inspect <volume_name>
+
+
+
+docker run -d -p<host_port>:<container_port> -v <host_volume>:<container_volume> <image>:<version>
+
+docker run -d -p 80:80 -v /home/centos/nginx_folder:/usr/share/nginx/html nginx
+The data which is in nginx_folder will reflect in html page
+
+we should use volumes for database applications
 
